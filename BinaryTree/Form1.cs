@@ -53,12 +53,12 @@ namespace BinaryTree
                 }
                 else
                 {
-                    MessageBox.Show("Por favor ingrese números válidos.");
+                    MessageBox.Show("Please enter valid numbers. ");
                     return;
                 }
             }
 
-            MessageBox.Show("Números insertados correctamente.");
+            MessageBox.Show("Numbers inserted correctly.");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -67,12 +67,12 @@ namespace BinaryTree
             if (int.TryParse(input.Trim(), out int number))
             {
                 tree.Delete(number);
-                MessageBox.Show("Número eliminado correctamente.");
+                MessageBox.Show("Number correctly eliminated.");
             }
             else
             {
-                MessageBox.Show("Por favor ingrese un número válido.");
-                return;
+                MessageBox.Show("Please enter a valid number.");
+                return; 
             }
         }
 
